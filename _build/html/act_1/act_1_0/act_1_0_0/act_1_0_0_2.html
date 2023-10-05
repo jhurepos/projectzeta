@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>. &#8212; My Jupyter Book</title>
+    <title> &#8212; My Jupyter Book</title>
   
   
   
@@ -181,7 +181,8 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="act_1_0_0_1.html"></a></li>
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">.</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"></a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="act_1_0_0_3.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../act_1_0_1/act_1_0_1_1.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../act_1_0_1/act_1_0_1_2.html">.</a></li>
@@ -363,7 +364,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -374,11 +377,21 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>.</h1>
+    <h1></h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2</a></li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -389,7 +402,143 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>.<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<h1><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id2">
+<h1>2<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Anjali</p></li>
+</ul>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Jess: neurocongitive outcomes in liver transplant (Frailty a modifier?)</p>
+<ul>
+<li><p>icu delirium</p></li>
+<li><p>cognitive dysfunction 6 (back to baseline?)</p></li>
+<li><p>long term risk of demention</p></li>
+<li><p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7362306/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7362306/</a></p></li>
+<li><p>Johns Hopkins Adjusted Clinical Groups</p></li>
+<li><p>Fraught collaborations (two centers; we are not primary)</p></li>
+<li><p>But is this cumulative knowledge?</p></li>
+<li><p>Or are all questions in silos??</p></li>
+<li><p>How about adjust for physical phenotype to see if cognitive phenotype is independent?</p></li>
+</ul>
+</li>
+</ul>
+<p>? Frailty</p>
+<ul class="simple">
+<li><p>Physical phenotype</p></li>
+<li><p>Index</p></li>
+<li><p>Haugen/Hopkins-UCSF Index: 10y followup</p></li>
+</ul>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Learning experience</p></li>
+<li><p>Sharing experience</p></li>
+<li><p>Path thus far</p></li>
+<li><p>And forward</p></li>
+<li><p>Problems encountered</p></li>
+<li><p>Needs with no solutions</p></li>
+<li><p>Innevitable part of scien`ce</p></li>
+</ul>
+<hr class="docutils" />
+<p>Individual Development Plan</p>
+<hr class="docutils" />
+<p>Two annual PhD requirements:</p>
+<ul class="simple">
+<li><p>First year (Academic advisor)</p></li>
+<li><p>Beyond first year (Research advisor)</p></li>
+<li><p>Schedule meeting, add to</p></li>
+<li><p>Thesis committee meeting (Annual thesis committee: min 3 members, 1 external, 1 internal, 1 chair)</p></li>
+</ul>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Create an empty directed graph</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
+
+<span class="c1"># Add nodes</span>
+<span class="n">nodes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1.Confounder&#39;</span><span class="p">,</span> <span class="s1">&#39;3.Replication&#39;</span><span class="p">,</span> <span class="s1">&#39;4.Environment&#39;</span><span class="p">,</span> <span class="s1">&#39;5.Mediator&#39;</span><span class="p">,</span> <span class="s1">&#39;6.Outcome&#39;</span><span class="p">,</span> <span class="s1">&#39;2.Heredity&#39;</span><span class="p">]</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_nodes_from</span><span class="p">(</span><span class="n">nodes</span><span class="p">)</span>
+
+<span class="c1"># Add edges to the graph (arrows in the DAG)</span>
+<span class="n">edges</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s1">&#39;1.Confounder&#39;</span><span class="p">,</span> <span class="s1">&#39;4.Environment&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;2.Heredity&#39;</span><span class="p">,</span> <span class="s1">&#39;4.Environment&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;4.Environment&#39;</span><span class="p">,</span> <span class="s1">&#39;5.Mediator&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;5.Mediator&#39;</span><span class="p">,</span> <span class="s1">&#39;6.Outcome&#39;</span><span class="p">)</span>
+<span class="p">]</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_edges_from</span><span class="p">(</span><span class="n">edges</span><span class="p">)</span>
+
+<span class="c1"># Set figure size</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>  <span class="c1"># You can adjust the width and height here</span>
+
+<span class="c1"># Draw the DAG</span>
+<span class="n">pos</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;1.Confounder&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+    <span class="s1">&#39;3.Replication&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span>
+    <span class="s1">&#39;4.Environment&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">.75</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span>
+    <span class="s1">&#39;2.Heredity&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+    <span class="s1">&#39;5.Mediator&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">1.35</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span>
+    <span class="s1">&#39;6.Outcome&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="n">labels</span> <span class="o">=</span> <span class="p">{</span><span class="n">edge</span><span class="p">:</span> <span class="s1">&#39;&#39;</span> <span class="k">for</span> <span class="n">edge</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">edges</span><span class="p">}</span>
+
+<span class="c1"># https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.ConnectionStyle.html#matplotlib.patches.ConnectionStyle</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="s1">&#39;lightblue&#39;</span><span class="p">,</span> <span class="n">font_weight</span><span class="o">=</span><span class="s1">&#39;normal&#39;</span><span class="p">,</span> <span class="n">node_size</span><span class="o">=</span><span class="mi">12000</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">17</span><span class="p">,</span> <span class="n">arrows</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">connectionstyle</span><span class="o">=</span><span class="s1">&#39;arc3,rad=0.01&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="../../../_images/25e992a093dd1934a413df9b6e25c5c39a4d2afaf26890673a439ed11f5d7911.png" src="../../../_images/25e992a093dd1934a413df9b6e25c5c39a4d2afaf26890673a439ed11f5d7911.png" />
+</div>
+</div>
+<p>Six foundational tokens for every study</p>
+<ol class="arabic simple">
+<li><p>Confounders</p>
+<ul class="simple">
+<li><p>Physical frailty</p></li>
+<li><p>Psoas muscle sarcopenia</p></li>
+</ul>
+</li>
+<li><p>Heredity</p></li>
+<li><p>Replication error</p>
+<ul class="simple">
+<li><p>Random error</p></li>
+<li><p>Cumulative</p></li>
+<li><p>Increasing with age</p></li>
+</ul>
+</li>
+<li><p>Environment</p>
+<ul class="simple">
+<li><p>Hypothesis</p></li>
+<li><p>Cognitive frailty predicts delirium in liver transplant</p></li>
+<li><p>Its defined as:</p></li>
+<li><p>Cognitive frailty is defined as the presence of both physical frailty and cognitive impairment without dementia</p></li>
+<li><p>Physical frailty is defined as the presence of three or more of the following five criteria: unintentional weight loss, self-reported exhaustion, weakness, slow walking speed, and low physical activity</p></li>
+<li><p>Cognitive impairment without dementia is defined as a score of 0.5 standard deviations or more below the mean on two or more tests of cognitive function</p></li>
+<li><p>Cognitive frailty is a risk factor for delirium in liver transplant recipients</p></li>
+</ul>
+</li>
+<li><p>Mediator</p></li>
+<li><p>Outcome</p>
+<ul class="simple">
+<li><p>Delirium</p></li>
+<li><p>Cognitive dysfunction</p></li>
+<li><p>Long term risk of demention</p></li>
+</ul>
+</li>
+</ol>
 </section>
 
     <script type="text/x-thebe-config">
@@ -450,6 +599,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
